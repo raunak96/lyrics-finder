@@ -8,7 +8,7 @@ import Lyrics from "./components/tracks/Lyrics";
 const App = () => {
     return (
         <ContextProvider>
-            <Router>
+            <Router basename={process.env.PUBLIC_URL}>  {/* Use this URL as base URL */}
                 <Fragment>
                     <Navbar />
                     <div className="container">
